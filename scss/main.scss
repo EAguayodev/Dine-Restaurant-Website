@@ -1,0 +1,19 @@
+@use "variables";
+@use "heading-home";
+@use "booking-header";
+@use "booking-mid";
+@use "enjoyable-content";
+@use "local-content";
+@use "highlight-content";
+@use "reservation";
+@use "dine-footer";
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: variables.$font-league-spartan;
+}
