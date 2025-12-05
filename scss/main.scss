@@ -1,12 +1,13 @@
-@use "variables";
-@use "heading-home";
-@use "booking-header";
-@use "booking-mid";
-@use "enjoyable-content";
-@use "local-content";
-@use "highlight-content";
-@use "reservation";
-@use "dine-footer";
+@import "variables";
+@import "heading-home";
+@import "booking-header";
+@import "booking-mid";
+@import "enjoyable-content";
+@import "local-content";
+@import "highlight-content";
+@import "gathering-displays";
+@import "reservation";
+@import "dine-footer";
 
 *{
     margin: 0;
@@ -15,5 +16,5 @@
 }
 
 body{
-    font-family: variables.$font-league-spartan;
+    font-family: $font-league-spartan;
 }

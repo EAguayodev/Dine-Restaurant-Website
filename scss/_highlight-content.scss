@@ -1,0 +1,46 @@
+.highlight-dishes{
+    background-color: $cod-gray;
+    color: $white;
+    height: 47.563rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.highlight-row{
+    gap: 10rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10rem;
+
+    h3{
+        font-size: 3rem;
+        margin-bottom: 2rem;
+        width: 27.813rem;
+    }
+
+    h5{
+        font-size: 1.25rem;
+        margin-bottom: 1.5rem;
+    }
+
+    p{
+        font-size: 1.125rem;
+        line-height: 1.5;
+        width: 27.813rem;
+    }
+}
+
+.offer-row{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid $shuttle-gray;
+    padding: 2rem 0;
+
+    p{
+        font-size: 1rem;
+        width: 21.875rem;
+    }
+}

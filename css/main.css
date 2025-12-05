@@ -1,3 +1,247 @@
+header {
+  background-color: #111111;
+  background-image: url(../images/homepage/hero-bg-desktop.jpg);
+  background-size: cover;
+  height: 51.25rem;
+  display: flex;
+  align-items: center;
+  z-index: -3;
+}
+header .dine-logo {
+  position: relative;
+  top: -6rem;
+}
+header .container-header {
+  padding: 0 10rem;
+}
+header .row-header {
+  color: #ffffff;
+}
+header .row-header h1 {
+  font-size: 5rem;
+  font-weight: 300;
+  margin-bottom: 1rem;
+  width: 31.75rem;
+}
+header .row-header p {
+  font-size: 1.25rem;
+  line-height: 1.5;
+  margin-bottom: 3rem;
+  width: 27.813rem;
+}
+header .row-header .btn-booking-1 {
+  padding: 1.5rem 4rem;
+  background-color: transparent;
+  border: 1px solid #ffffff;
+  color: #ffffff;
+  font-size: 0.875rem;
+  font-weight: 600;
+  letter-spacing: 2px;
+  cursor: pointer;
+  text-decoration: none;
+}
+header .row-header .btn-booking-1:hover {
+  background-color: #ffffff;
+  color: #111111;
+}
+
+.enjoy-content-row {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-image: url(../images/patterns/pattern-curve-top-right.svg);
+  background-repeat: no-repeat;
+  background-position: left center;
+}
+.enjoy-content-row h2 {
+  font-size: 3rem;
+  font-weight: 600;
+  margin-bottom: 2rem;
+  width: 29.813rem;
+}
+.enjoy-content-row p {
+  font-size: 1.125rem;
+  line-height: 1.5;
+  width: 27.813rem;
+}
+.enjoy-content-row .enjoyable-place-img {
+  position: relative;
+  top: -4rem;
+  right: 0rem;
+  z-index: 100;
+}
+
+.locally-sourced-row {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-image: url(../images/patterns/pattern-curve-top-left.svg);
+  background-repeat: no-repeat;
+  background-position: bottom right;
+}
+.locally-sourced-row h2 {
+  font-size: 3rem;
+  font-weight: 600;
+  margin-bottom: 2rem;
+  width: 29.813rem;
+}
+.locally-sourced-row p {
+  font-size: 1.125rem;
+  line-height: 1.5;
+  width: 27.813rem;
+}
+
+.highlight-dishes {
+  background-color: #111111;
+  color: #ffffff;
+  height: 47.563rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.highlight-row {
+  gap: 10rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 10rem;
+}
+.highlight-row h3 {
+  font-size: 3rem;
+  margin-bottom: 2rem;
+  width: 27.813rem;
+}
+.highlight-row h5 {
+  font-size: 1.25rem;
+  margin-bottom: 1.5rem;
+}
+.highlight-row p {
+  font-size: 1.125rem;
+  line-height: 1.5;
+  width: 27.813rem;
+}
+
+.offer-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #5c6779;
+  padding: 2rem 0;
+}
+.offer-row p {
+  font-size: 1rem;
+  width: 21.875rem;
+}
+
+.gathering-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-image: url(../images/patterns/pattern-curve-top-right.svg);
+  background-repeat: no-repeat;
+}
+.gathering-row h2 {
+  color: #242b37;
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+.gathering-row p {
+  color: #242b37;
+  font-size: 1rem;
+  line-height: 1.5;
+  width: 27.813rem;
+  margin-bottom: 4rem;
+}
+.gathering-row .btn-booking-2 {
+  padding: 1.5rem 4rem;
+  background-color: #111111;
+  color: #ffffff;
+  font-size: 0.875rem;
+  font-weight: 600;
+  letter-spacing: 2px;
+  cursor: pointer;
+  text-decoration: none;
+}
+.gathering-row .btn-booking-2:hover {
+  background-color: #ffffff;
+  color: #111111;
+  border: 1px solid #111111;
+}
+.gathering-row .btn-gathering, .gathering-row .btn-special, .gathering-row .btn-social {
+  background: none;
+  border: none;
+  color: #4c4c4c;
+  font-size: 1.063rem;
+  cursor: pointer;
+}
+.gathering-row .btn-gathering:hover, .gathering-row .btn-special:hover, .gathering-row .btn-social:hover {
+  color: #17192b;
+}
+.gathering-row ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 4rem;
+}
+.gathering-row ul li {
+  margin-bottom: 1rem;
+  font-size: 1rem;
+  color: #5c6779;
+}
+
+.reservation-section {
+  background-image: url(../images/homepage/ready-bg-desktop.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 7rem 1rem;
+}
+
+.reservation-row {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.reservation-row h2 {
+  font-size: 3rem;
+  color: #ffffff;
+}
+.reservation-row .btn-booking-3 {
+  background-color: transparent;
+  border: 1px solid #ffffff;
+  color: #ffffff;
+  padding: 1.5rem 4rem;
+  font-size: 0.875rem;
+  font-weight: 600;
+  letter-spacing: 2px;
+  cursor: pointer;
+  text-decoration: none;
+}
+.reservation-row .btn-booking-3:hover {
+  background-color: #ffffff;
+  color: #111111;
+}
+
+footer {
+  background-color: #111111;
+  color: #ffffff;
+  padding: 4rem 0rem;
+}
+footer .row {
+  display: flex;
+  justify-content: space-around;
+}
+footer .list-box {
+  display: flex;
+  justify-content: space-between;
+  gap: 5rem;
+}
+footer ul {
+  list-style: none;
+}
+footer ul li {
+  margin-bottom: 1rem;
+}
+
 * {
   margin: 0;
   padding: 0;

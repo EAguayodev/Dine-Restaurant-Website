@@ -1,0 +1,35 @@
+.reservation-section{
+    background-image: url(../images/homepage/ready-bg-desktop.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 7rem 1rem;
+}
+
+.reservation-row{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    h2{
+        font-size: 3rem;
+        color: $white;
+    }
+
+    .btn-booking-3{
+        background-color: transparent;
+        border: 1px solid $white;
+        color: $white;
+        padding: 1.5rem 4rem;
+        font-size: 0.875rem;
+        font-weight: 600;
+        letter-spacing: 2px;
+        cursor: pointer;
+        text-decoration: none;
+        
+        &:hover{
+            background-color: $white;
+            color: $cod-gray;
+        }
+    }
+
+}

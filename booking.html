@@ -14,29 +14,97 @@
 </head>
 <body>
 <!-- booking header content -->
-  Reservations
-
-  We can’t wait to host you. If you have any special requirements please feel free to 
-  call on the phone number below. We’ll be happy to accommodate you.
-
+ <header>
+    <div class="container-header">
+      <div class="row-header">
+        <div>
+          <a href="index.html">
+            <img class="dine-logo" src="images/logo.svg" alt="Dine Logo">
+          </a>
+          
+          <h1>Reservations</h1>
+          <p>We can’t wait to host you. If you have any special requirements please feel free to
+            call on the phone number below. We’ll be happy to accommodate you.</p>
+        </div>
+        <div>
+          <form action="">
+            <div class="form-controls">
+              <input type="text" placeholder="Name">
+            </div>
+            <div class="form-controls">
+              <input type="text" placeholder="Email">
+            </div>
+            <div class="form-controls">
+              <label for="Date">Pick a date</label>
+              <input type="text" placeholder="MM">
+              <input type="text" placeholder="DD">
+              <input type="text" placeholder="YYYY">
+            </div>
+            <div class="form-controls">
+             <label for="Time">Pick a time</label>
+             <input type="text" placeholder="00">
+             <input type="text" placeholder="00">
+             <input type="text" placeholder="AM">
+             <button>
+              <img src="images/icons/icon-arrow.svg" alt="arrow">
+             </button>
+            </div>
+            <div class="form-controls">
+             <img src="images/icons/icon-minus.svg" alt="minus icon button"> people <img src="images/icons/icon-plus.svg" alt="plus icon button">
+            </div>
+            <div class="form-controls">
+              <button class="btn-reservation">Make Reservation</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+ </header>
 <!-- mid layout content -->
-
-  Name
-  Email
-  Pick a date
-  Pick a time
-
-  Make Reservation
-
+ <section class="mid-pattern-layout">
+  <div class="mid-pattern-row">
+    <img src="images/patterns/pattern-curve-bottom-right.svg" alt="bottom curve right">
+    <img src="images/patterns/pattern-lines.svg" alt="">
+  </div>
+ </section>
 
 <!-- booking footer -->
-  Marthwaite, Sedbergh
-  Cumbria
-  +00 44 123 4567
-
-  Open Times
-  Mon - Fri: 09:00 AM - 10:00 PM
-  Sat - Sun: 09:00 AM - 11:30 PM
-
+  <footer>
+    <div class="row">
+      <div>
+        <a href="index.html">
+          <img class="dine-logo-footer" src="images/logo.svg" alt="Dine Logo">
+        </a>
+      </div>
+      <div>
+        <div>
+          <ul>
+            <li>
+              Marthwaite, Sedbergh
+            </li>
+            <li>
+              Cumbria
+            </li>
+            <li>
+              +00 44 123 4567
+            </li>
+          </ul>
+        </div>
+        <div>
+          <ul>
+            <li>
+              Open Times
+            </li>
+            <li>
+              Mon - Fri: 09:00 AM - 10:00 PM
+            </li>
+            <li>
+              Sat - Sun: 09:00 AM - 11:30 PM
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
 </body>
 </html>

@@ -1,0 +1,30 @@
+
+
+.enjoy-content-row{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-image: url(../images/patterns/pattern-curve-top-right.svg);
+    background-repeat: no-repeat;
+    background-position: left center;
+
+    h2{
+        font-size: 3rem;
+        font-weight: 600;
+        margin-bottom: 2rem;
+        width: 29.813rem;
+    }
+
+    p{
+        font-size: 1.125rem;
+        line-height: 1.5;
+        width: 27.813rem;
+    }
+
+    .enjoyable-place-img{
+        position: relative;
+        top: -4rem;
+        right: 0rem;
+        z-index: 100;
+    }
+}

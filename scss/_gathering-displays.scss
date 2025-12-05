@@ -1,0 +1,63 @@
+.gathering-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-image: url(../images/patterns/pattern-curve-top-right.svg);
+    background-repeat: no-repeat;
+
+    h2 {
+        color: $ebony-clay;
+        font-size: 3rem;
+        margin-bottom: 1rem;
+    }
+
+    p {
+        color: $ebony-clay;
+        font-size: 1rem;
+        line-height: 1.5;
+        width: 27.813rem;
+        margin-bottom: 4rem;
+    }
+
+    .btn-booking-2 {
+        padding: 1.5rem 4rem;
+        background-color: $cod-gray;
+        color: $white;
+        font-size: 0.875rem;
+        font-weight: 600;
+        letter-spacing: 2px;
+        cursor: pointer;
+        text-decoration: none;
+
+        &:hover {
+            background-color: $white;
+            color: $cod-gray;
+            border: 1px solid $cod-gray;
+        }
+    }
+
+    .btn-gathering, .btn-special, .btn-social{
+        background: none;
+        border: none;
+        color: #4c4c4c;
+        font-size: 1.063rem;
+        cursor: pointer;
+
+        &:hover {
+            color: $mirage;
+        }
+    }
+
+    ul{
+        list-style: none;
+        padding: 0;
+        margin-top: 4rem;
+
+        li{
+            margin-bottom: 1rem;
+            font-size: 1rem;
+            color: $shuttle-gray;
+
+        }
+    }
+}
