@@ -3,7 +3,7 @@
     color: $white;
     height: 47.563rem;
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
 }
 
@@ -11,10 +11,13 @@
     gap: 10rem;
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    padding: 0 10rem;
+    // padding: 0 10rem;
 
-    h3{
+    .title-patterns {
+            margin-bottom: 2rem;
+        }
+
+    h2{
         font-size: 3rem;
         margin-bottom: 2rem;
         width: 27.813rem;
@@ -29,6 +32,21 @@
         font-size: 1.125rem;
         line-height: 1.5;
         width: 27.813rem;
+    }
+
+    .menu-row{
+        display: flex;
+    }
+
+    .offer-lines{
+        position: relative;
+        top: 0.5rem;
+        right: 1rem;
+    }
+
+    .dish-img{
+        position: relative;
+        z-index: 1;
     }
 }
 

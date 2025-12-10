@@ -1,55 +1,54 @@
-header{
+header {
     background-color: $cod-gray;
     background-image: url(../images/homepage/hero-bg-desktop.jpg);
     background-size: cover;
-    height: 51.25rem;
+    background-repeat: no-repeat;
+    height: 820px;
+    color: $white;
     display: flex;
-    // flex-direction: column;
-    // justify-content: center;
     align-items: center;
-    z-index: -3;
-    .dine-logo{
+
+    .row-header {
+        position: relative;
+        left: 5.5rem;
+    }
+
+    .dine-logo {
         position: relative;
         top: -6rem;
     }
 
-    .container-header{
-        padding: 0 10rem;
+
+
+    h1 {
+        font-size: 5rem;
+        font-weight: 300;
+        margin-bottom: 1rem;
+        width: 31.75rem;
     }
 
-    .row-header{
+    p {
+        font-size: 1.25rem;
+        line-height: 1.5;
+        margin-bottom: 3rem;
+        width: 27.813rem;
+    }
+
+    .btn-booking-1 {
+        padding: 1.5rem 4rem;
+        background-color: transparent;
+        border: 1px solid $white;
         color: $white;
-       
+        font-size: 1.063rem;
+        font-weight: 600;
+        letter-spacing: 2px;
+        cursor: pointer;
+        text-decoration: none;
 
-        h1{
-            font-size: 5rem;
-            font-weight: 300;
-            margin-bottom: 1rem;
-            width: 31.75rem;
-        }
-
-        p{
-            font-size: 1.25rem;
-            line-height: 1.5;
-            margin-bottom: 3rem;
-            width: 27.813rem;
-        }
-
-        .btn-booking-1{
-            padding: 1.5rem 4rem;
-            background-color: transparent;
-            border: 1px solid $white;
-            color: $white;
-            font-size: 0.875rem;
-            font-weight: 600;
-            letter-spacing: 2px;
-            cursor: pointer;
-            text-decoration: none;
-
-            &:hover{
-                background-color: $white;
-                color: $cod-gray;
-            }
+        &:hover {
+            background-color: $white;
+            color: $cod-gray;
+            transition: 250ms ease-in-out;
         }
     }
 }

@@ -1,0 +1,323 @@
+// Responsive styles for tablet screens
+
+// header text positioning adjustments for large screens
+
+@media(min-width:118.875rem) {
+    header {
+        .row-header {
+            left: 14rem;
+        }
+    }
+}
+
+@media(max-width:64rem) {
+    header {
+        background-image: url(../images/homepage/hero-bg-tablet.jpg);
+        height: 62rem;
+        justify-content: center;
+
+        .row-header {
+            text-align: center;
+            align-items: center;
+            top: 12rem;
+            left: 0rem;
+            right: 0rem;
+
+            .dine-logo {
+                margin: 0 auto;
+            }
+
+            h1 {
+                font-size: 3rem;
+                width: 25rem;
+                position: relative;
+                left: 5rem;
+            }
+
+            p {
+                width: 35.813rem;
+                text-align: center;
+            }
+        }
+    }
+
+    .enjoy-content-row {
+        flex-direction: column;
+        text-align: center;
+
+        .title-patterns {
+            margin: 0 auto;
+        }
+    }
+
+    .locally-sourced-row {
+        flex-direction: column-reverse;
+        text-align: center;
+
+        .title-patterns {
+            margin: 0 auto;
+        }
+
+        p {
+            margin-bottom: 4rem;
+        }
+
+        .sourced-img {
+            margin-bottom: 6.5rem;
+            position: relative;
+            left: 5rem;
+        }
+    }
+
+    .highlight-dishes {
+        height: 55.688rem;
+
+        .title-patterns {
+            margin: 0 auto;
+        }
+
+        .highlight-row {
+            flex-direction: column;
+            justify-content: center;
+            text-align: center;
+            align-items: center;
+            margin: 0 auto;
+        }
+
+        .menu-offers {
+            position: relative;
+            top: -3rem;
+        }
+
+        .menu-highlight-text {
+            position: relative;
+            top: 4rem;
+        }
+
+        .offer-row {
+
+            h5,
+            p {
+                text-align: left;
+            }
+        }
+    }
+
+
+    .gathering-row {
+        flex-direction: column;
+        text-align: center;
+
+        h2,
+        p {
+            text-align: center;
+        }
+    }
+
+    .displays-box {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    .displays-button-box {
+
+        ul {
+            display: flex;
+            gap: 3rem;
+
+        }
+    }
+
+    .reservation-section {
+        background-image: url(../images/homepage/ready-bg-tablet.jpg);
+
+        .reservation-row {
+            flex-direction: column;
+        }
+
+        h2 {
+            margin-bottom: 2rem;
+        }
+    }
+
+    footer {
+        .list-box {
+            flex-direction: column;
+        }
+    }
+
+    // booking tablet area
+}
+
+// Responsive styles for mobile screens
+@media(max-width:30rem) {
+    header {
+        background-position: center center;
+        background-image: url(../images/homepage/hero-bg-mobile.jpg);
+        height: 66.75rem;
+
+        .row-header {
+
+            left: 0rem;
+
+            h1 {
+                font-size: 2.5rem;
+                left: 0;
+            }
+
+            p {
+                font-size: 1rem;
+                width: 20.438rem;
+                margin: 0 auto;
+                margin-bottom: 3rem;
+            }
+
+        }
+    }
+
+    .enjoy-content-row {
+        h2 {
+            font-size: 2rem;
+            width: 20rem;
+            margin: 0 auto;
+        }
+
+        p {
+            width: 23rem;
+        }
+    }
+
+    .locally-sourced-row {
+        h2 {
+            font-size: 2rem;
+            width: 20rem;
+            margin: 0 auto;
+        }
+
+        p {
+            width: 23rem;
+        }
+
+        .sourced-img {
+            left: 0rem;
+        }
+    }
+
+    .gathering-row,
+    .locally-sourced-row,
+    .enjoy-content-row {
+        background-image: none;
+    }
+
+    .pattern-line-1,
+    .pattern-line-2 {
+        display: none;
+    }
+
+    .highlight-dishes {
+        height: auto;
+        text-align: center;
+
+        h2 {
+            font-size: 2rem;
+            width: 20rem;
+            text-align: center;
+            margin: 0 auto;
+        }
+
+        p {
+            width: 23rem;
+            margin: 0 auto;
+        }
+
+        .offer-row {
+            flex-direction: column;
+
+            h5,
+            p {
+                text-align: center;
+            }
+
+            .offer-lines {
+                display: none;
+            }
+        }
+    }
+
+    .gathering-row {
+        h2 {
+            font-size: 2rem;
+            width: 20rem;
+            text-align: center;
+            margin: 0 auto;
+        }
+
+        p {
+            width: 23rem;
+            margin: 0 auto;
+            margin-bottom: 3rem;
+        }
+
+        .displays-button-box {
+            ul {
+                flex-direction: column;
+                gap: 1rem;
+            }
+        }
+    }
+
+    .reservation-section {
+        background-image: url(../images/homepage/ready-bg-mobile.jpg);
+
+        h2 {
+            font-size: 2rem;
+            width: 20rem;
+            text-align: center;
+        }
+    }
+
+    footer {
+        .row {
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        ul{
+            text-align: center;
+        }
+
+    }
+
+    // booking mobile area
+
+    .booking-header{
+        background-image: url(../images/booking/hero-bg-mobile.jpg);
+
+        .row-header{
+            top: 0;
+            flex-direction: column;
+        }
+    }
+
+    form{
+        top: 0;
+
+        .form-controls{
+            gap: 0;
+            flex-wrap: wrap;
+            flex-direction: column;
+        }
+    }
+
+    .mid-pattern-layout{
+        height: 100%;
+    }
+
+    .mid-pattern-row {
+        .curve-bottom{
+            display: none;
+        }
+    }
+}

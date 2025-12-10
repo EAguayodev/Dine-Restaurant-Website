@@ -6,6 +6,10 @@
     background-repeat: no-repeat;
     background-position: bottom right;
 
+    .title-patterns {
+            margin-bottom: 2rem;
+        }
+
     h2 {
             font-size: 3rem;
             font-weight: 600;
@@ -17,5 +21,23 @@
             font-size: 1.125rem;
             line-height: 1.5;
             width: 27.813rem;
+        }
+
+        .local-right{
+            display: flex;
+            align-items: center;
+        }
+
+        .sourced-img{
+            box-shadow: -3px -4px 53px 0px rgba(0, 0, 0, 0.75);
+            -webkit-box-shadow: -3px -4px 53px 0px rgba(0, 0, 0, 0.75);
+            -moz-box-shadow: -3px -4px 53px 0px rgba(0, 0, 0, 0.75);
+            position: relative;
+            top: 4rem;
+        }
+
+        .pattern-line-1{
+            position: relative;
+            right: 2.5rem;
         }
 }

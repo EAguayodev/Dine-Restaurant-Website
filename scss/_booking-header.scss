@@ -1,0 +1,185 @@
+ .booking-header{
+    background-image: url(../images/booking/hero-bg-desktop.jpg);
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+
+
+    .row-header{
+        display: flex;
+        justify-content: space-between;
+        // align-items: center;
+    }
+}
+
+.btn-arrow{
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    margin-left: 1rem;
+}
+
+.arrow-icon{
+    position: relative;
+    right: 1.5rem;
+}
+
+form{
+    background-color: $white;
+    padding: 1rem 1rem;
+    height: 34.063rem;
+    box-shadow: -3px -4px 53px 0px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: -3px -4px 53px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: -3px -4px 53px 0px rgba(0, 0, 0, 0.75);
+    position: relative;
+    top: 5rem;
+    max-width: 540px;
+    width: 100%;
+
+    .form-column{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        gap: 2rem;
+    }
+
+    .r-number, span{
+        color: $cod-gray;
+    }
+
+    .name-input{
+        width: 25rem;
+        padding: 0.875rem 1rem;
+        border-left: none;
+        border-top: none;
+        border-right: none;
+        border-bottom: 1px solid $cod-gray;
+        font-size: 1rem;
+        font-weight: 400;
+        line-height: 1.5;
+        color: $cod-gray;
+        outline: none;
+    }
+
+    .email-input{
+        width: 25rem;
+        padding: 0.875rem 1rem;
+        border-left: none;
+        border-top: none;
+        border-right: none;
+        border-bottom: 1px solid $cod-gray;
+        font-size: 1rem;
+        font-weight: 400;
+        line-height: 1.5;
+        color: $cod-gray;
+        outline: none;
+    }
+
+    .input-month, .input-day, .input-year, .input-hour, .input-minute, .input-am-pm{
+        width: 5.75rem;
+        padding: 0.875rem 1rem;
+        border-left: none;
+        border-top: none;
+        border-right: none;
+        border-bottom: 1px solid $cod-gray;
+        font-size: 1rem;
+        font-weight: 400;
+        line-height: 1.5;
+        color: $cod-gray;
+        outline: none;
+    }
+
+    .form-controls{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 1rem;
+    }
+
+    .input-field.error-placeholder::placeholder {
+        color: $red;
+    }
+
+    label{
+        font-weight: 500;
+        font-size: 1.25rem;
+        line-height: 1.625rem;
+        color: $cod-gray;
+    }
+
+    .btn-plus, .btn-minus{
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+        padding: 0;
+    }
+
+    .line{
+        max-width: 27.75rem;
+        width: 90%;
+        height: 1px;
+        border-bottom: 1px solid $cod-gray;    
+    }
+
+    label.label-error{
+        color: $red;
+    }
+
+    .am-pm_submenu{
+        position: absolute;
+        top: 20.5rem;
+        right: 0rem;
+        left: 20rem;
+        box-shadow: 0px 0px 53px 0px rgba(0, 0, 0, 0.75);
+        -webkit-box-shadow: 0px 0px 53px 0px rgba(0, 0, 0, 0.75);
+        -moz-box-shadow: 0px 0px 53px 0px rgba(0, 0, 0, 0.75);
+        color: $cod-gray;
+        width: 5.75rem;   
+        display: none;        
+        padding: 0.5rem 2rem;
+        gap: 0.5rem;
+        
+        a{
+            text-decoration: none;
+            color: $cod-gray;
+            font-size: 1rem;
+            font-weight: 400;
+            line-height: 1.5;
+            cursor: pointer;
+        }
+    }
+
+    .btn-reservation{
+        padding: 1.5rem 7rem;
+        background-color: $cod-gray;
+        border: none;
+        color: $white;
+        font-size: 1.063rem;
+        font-weight: 600;
+        letter-spacing: 2px;
+        cursor: pointer;
+        text-decoration: none;
+        &:hover{
+            background-color: $white;
+            border: 1px solid $cod-gray;
+            color: $cod-gray;
+        }
+    }
+}
+
+
+.mid-pattern-row{
+    display: flex;
+    align-items: flex-start;
+
+
+    .pattern-lines{
+        position: relative;
+        top: 2rem;
+        right: 5.5rem;
+        z-index: -2;
+    }
+}

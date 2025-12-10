@@ -14,7 +14,7 @@
 </head>
 <body>
 <!-- booking header content -->
- <header>
+ <header class="booking-header">
     <div class="container-header">
       <div class="row-header">
         <div>
@@ -27,34 +27,63 @@
             call on the phone number below. We’ll be happy to accommodate you.</p>
         </div>
         <div>
-          <form action="">
+          <form action="" id="form-reservation">
+           <div class="form-column">
             <div class="form-controls">
-              <input type="text" placeholder="Name">
+              <input class="name-input input-field" type="text" placeholder="Name">
+              <small class="error-text" id="error-name"></small>
             </div>
             <div class="form-controls">
-              <input type="text" placeholder="Email">
+              <input class="email-input input-field" type="text" placeholder="Email">
+              <small class="error-text" id="error-email"></small>
             </div>
             <div class="form-controls">
-              <label for="Date">Pick a date</label>
-              <input type="text" placeholder="MM">
-              <input type="text" placeholder="DD">
-              <input type="text" placeholder="YYYY">
+              <div class="detail-controls">
+                <label class="date-text label-input" id="date-pick" for="Date">Pick a date</label>
+                <small class="error-text" id="error-date"></small>
+              </div>
+             <div>
+              <input class="input-month input-field" type="text" placeholder="MM">
+              <input class="input-day input-field" type="text" placeholder="DD">
+              <input class="input-year input-field" type="text" placeholder="YYYY">
+             </div>
             </div>
             <div class="form-controls">
-             <label for="Time">Pick a time</label>
-             <input type="text" placeholder="00">
-             <input type="text" placeholder="00">
-             <input type="text" placeholder="AM">
-             <button>
-              <img src="images/icons/icon-arrow.svg" alt="arrow">
-             </button>
+              <div class="detail-controls">
+                <label class="time-text label-input" for="time" id="time-pick">Pick a time</label>
+                <small class="error-text" id="error-time"></small>
+              </div>
+              <div aria-expanded="false">
+                <input class="input-hour input-field" type="text" placeholder="00">
+                <input class="input-minute input-field" type="text" placeholder="00">
+                <input class="input-am-pm input-field" type="text" placeholder="AM">
+                <img class="arrow-icon" src="images/icons/icon-arrow.svg" alt="arrow" aria-hidden="true">
+                <div class="am-pm_submenu">
+                  <div>
+                    AM
+                  </div>
+                  <div>
+                    PM
+                  </div>
+                </div>
+              </div>
+              
+                <button class="btn-arrow">
+                </button>
+             
             </div>
             <div class="form-controls">
-             <img src="images/icons/icon-minus.svg" alt="minus icon button"> people <img src="images/icons/icon-plus.svg" alt="plus icon button">
-            </div>
+              <button class="btn-minus"><img class="icon-minus" src="images/icons/icon-minus.svg" alt="minus icon button"></button>
+              <span class="r-number">0</span> <span>people</span>
+               <button class="btn-plus"><img class="icon-plus" src="images/icons/icon-plus.svg"
+                  alt="plus icon button">
+                </button>
+              </div>
+              <div class="line"></div>
             <div class="form-controls">
               <button class="btn-reservation">Make Reservation</button>
             </div>
+           </div>
           </form>
         </div>
       </div>
@@ -63,8 +92,8 @@
 <!-- mid layout content -->
  <section class="mid-pattern-layout">
   <div class="mid-pattern-row">
-    <img src="images/patterns/pattern-curve-bottom-right.svg" alt="bottom curve right">
-    <img src="images/patterns/pattern-lines.svg" alt="">
+    <img class="curve-bottom" src="images/patterns/pattern-curve-bottom-right.svg" alt="bottom curve right">
+    <img class="pattern-lines" src="images/patterns/pattern-lines.svg" alt="pattern lines">
   </div>
  </section>
 
@@ -76,7 +105,7 @@
           <img class="dine-logo-footer" src="images/logo.svg" alt="Dine Logo">
         </a>
       </div>
-      <div>
+      <div class="list-box">
         <div>
           <ul>
             <li>

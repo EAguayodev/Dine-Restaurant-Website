@@ -11,14 +11,13 @@
   <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap" rel="stylesheet">
   <title>Frontend Mentor | Dine Website Challenge</title>
   <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/reset.css">
   <script src="js/script.js" defer></script>
 </head>
 <body>
-<main>
   <!-- header section -->
-   <header>
-    <div class="container-header">
-      <div class="row-header">
+   <header>     
+     <div class="row-header">
         <a href="index.html">
           <img class="dine-logo" src="images/logo.svg" alt="Dine Logo">
         </a>
@@ -27,22 +26,22 @@
           the comfort of our farmhouse.</p>
         <a class="btn btn-booking-1" href="booking.html">BOOK A TABLE</a>
       </div>
-    </div>
    </header>
+<main>
   <!-- enjoyable content -->
    <section class="enjoyable-content">
      <div class="enjoy-content-row">
        <div>
          <picture>
-           <source media="(min-width: 1200px)" srcset="images/homepage/enjoyable-place-desktop.jpg">
-           <source media="(min-width: 800px)" srcset="images/homepage/enjoyable-place-tablet.jpg">
-           <source media="(min-width: 500px)" srcset="images/homepage/enjoyable-place-mobile.jpg">
-           <img class="enjoyable-place-img" src="images/homepage/enjoyable-place-desktop.jpg" alt="Enjoyable place for all the family">
-          </picture>
+           <source media="(min-width: 1280px)" srcset="images/homepage/enjoyable-place-desktop.jpg">
+           <source media="(min-width: 768px)" srcset="images/homepage/enjoyable-place-tablet.jpg">
+           <source media="(min-width: 480px)" srcset="images/homepage/enjoyable-place-mobile.jpg">
+           <img class="enjoyable-place-img" src="images/homepage/enjoyable-place-mobile.jpg" alt="Enjoyable place for all the family">
+         </picture>
       </div>
       <div>
-        <img src="images/patterns/pattern-divide.svg" alt="pattern divide">
-        <h2>The most enjoyable place for all the family</h2>
+        <img class="title-patterns" src="images/patterns/pattern-divide.svg" alt="pattern divide">
+        <h2>Enjoyable place for all the family</h2>
         <p> 
         Our relaxed surroundings make dining with us a great experience for everyone. We can even arrange
         a tour of the farm before your meal.
@@ -54,21 +53,25 @@
    <section class="locally-sourced-food">
     <div class="locally-sourced-row">
       <div>
-        <img src="images/patterns/pattern-divide.svg" alt="pattern divide">
+        <img class="title-patterns" src="images/patterns/pattern-divide.svg" alt="pattern divide">
         <h2>The most locally sourced food</h2>
         <p>
         All our ingredients come directly from our farm or local fishery. So you can be sure that you’re
         eating the freshest, most sustainable food.
         </p>
       </div>
-      <div>
-        <picture>
-          <source media="(min-width: 1200px)" srcset="images/homepage/locally-sourced-desktop.jpg">
-          <source media="(min-width: 800px)" srcset="images/homepage/locally-sourced-tablet.jpg">
-          <source media="(min-width: 600px)" srcset="images/homepage/locally-sourced-mobile.jpg">
-          <img src="images/homepage/locally-sourced-desktop.jpg" alt="Locally sourced food">
-        </picture>
-        <img class="pattern-lines-1" src="images/patterns/pattern-lines.svg" alt="">
+      <div class="local-right">
+        <div>
+          <picture>
+            <source media="(min-width: 1280px)" srcset="images/homepage/locally-sourced-desktop.jpg">
+            <source media="(min-width: 768px)" srcset="images/homepage/locally-sourced-tablet.jpg">
+            <source media="(min-width: 480px)" srcset="images/homepage/locally-sourced-mobile.jpg">
+            <img class="sourced-img" src="images/homepage/locally-sourced-mobile.jpg" alt="Locally sourced food">
+          </picture>
+        </div>
+        <div>
+          <img class="pattern-line-1" src="images/patterns/pattern-lines.svg" alt="pattern-lines-1">
+        </div>
       </div>
     </div>
    </section>
@@ -77,11 +80,11 @@
    <section class="highlight-dishes">
     <div class="highlight-row">
       <!-- menu highlight text -->
-      <div>
-        <img src="images/patterns/pattern-divide.svg" alt="pattern-divide">
-        <h3>
+      <div class="menu-highlight-text">
+        <img class="title-patterns" src="images/patterns/pattern-divide.svg" alt="pattern-divide">
+        <h2>
           A few highlights from our menu
-        </h3>
+        </h2>
         <p>
           We cater for all dietary requirements, but here’s a glimpse at some of our diner’s favourites.
           Our menu is revamped every season.
@@ -91,15 +94,19 @@
       <!-- menu highlight offers -->
       <div class="menu-offers">
         <div class="offer-row">
-          <div>
+          <div class="menu-row">
+            <div>
               <picture>
-                <source media="(min-width: 1200px)" srcset="images/homepage/salmon-desktop-tablet.jpg">
-                <source media="(min-width: 800px)" srcset="images/homepage/salmon-desktop@2x.jpg">
-                <source media="(min-width: 600px)" srcset="images/homepage/salmon-mobile.jpg">
-                <source media="(min-width: 400px)" srcset="images/homepage/salmon-mobile@2x.jpg">
-                <img src="images/homepage/salmon-desktop-tablet.jpg" alt="Salmon">
+                <source media="(min-width: 1280px)" srcset="images/homepage/salmon-desktop-tablet.jpg">
+                <source media="(min-width: 900px)" srcset="images/homepage/salmon-desktop-tablet@2x.jpg">
+                <source media="(min-width: 768px)" srcset="images/homepage/salmon-mobile.jpg">
+                <source media="(min-width: 480px)" srcset="images/homepage/salmon-mobile@2x.jpg" width="654" height="490">
+                <img class="dish-img salmon-img" src="images/homepage/salmon-mobile.jpg" alt="Salmon">
               </picture>
-              <img src="images/patterns/pattern-divide.svg" alt="pattern divide">
+            </div>
+            <div>
+              <img class="offer-lines" src="images/patterns/pattern-divide.svg" alt="pattern divide">
+            </div>
           </div>
           <div>
             <h5>Seared Salmon Fillet</h5>
@@ -107,31 +114,39 @@
           </div>
         </div>
         <div class="offer-row">
-          <div>
-            <picture>
-              <source media="(min-width: 1200px)" srcset="images/homepage/beef-desktop-tablet.jpg">
-              <source media="(min-width: 800px)" srcset="images/homepage/beef-desktop-tablet@2x.jpg">
-              <source media="(min-width: 600px)" srcset="images/homepage/beef-mobile.jpg">
-              <source media="(min-width: 400px)" srcset="images/homepage/beef-mobile@2x.jpg">
-              <img src="images/homepage/beef-desktop-tablet.jpg" alt="Filet Mignon">
-            </picture>
-            <img src="images/patterns/pattern-divide.svg" alt="pattern divide">
+          <div class="menu-row">
+            <div>
+              <picture>
+                <source media="(min-width: 1280px)" srcset="images/homepage/beef-desktop-tablet.jpg">
+                <source media="(min-width: 900px)" srcset="images/homepage/beef-desktop-tablet@2x.jpg">
+                <source media="(min-width: 768px)" srcset="images/homepage/beef-mobile.jpg">
+                <source media="(min-width: 480px)" srcset="images/homepage/beef-mobile@2x.jpg">
+                <img class="dish-img filet-img" src="images/homepage/beef-mobile.jpg" alt="Filet Mignon">
+              </picture>
+            </div>
+            <div>
+              <img class="offer-lines" src="images/patterns/pattern-divide.svg" alt="pattern divide">
+            </div>
           </div>
           <div>
-              <h5>Rosemary Filet Mignon</h5>
+             <h5>Rosemary Filet Mignon</h5>
              <p>Our prime beef served to your taste with a delicious choice of seasonal sides.</p>
           </div>
         </div>
         <div class="offer-row">
-          <div>
-            <picture>
-              <source media="(min-width: 1200px)" srcset="images/homepage/chocolate-desktop-tablet.jpg">
-              <source media="(min-width: 800px)" srcset="images/homepage/chocolate-desktop-tablet@2x.jpg">
-              <source media="(min-width: 600px)" srcset="images/homepage/chocolate-mobile.jpg">
-              <source media="(min-width: 400px)" srcset="images/homepage/chocolate-mobile@2x.jpg">
-              <img src="images/homepage/chocolate-desktop-tablet.jpg" alt="Chocolate Mousse">
-            </picture>
-            <img src="images/patterns/pattern-divide.svg" alt="pattern divide">
+          <div class="menu-row">
+            <div>
+              <picture>
+                <source media="(min-width: 1280px)" srcset="images/homepage/chocolate-desktop-tablet.jpg" width="128" height="96">
+                <source media="(min-width: 900px)" srcset="images/homepage/chocolate-desktop-tablet@2x.jpg" width="256" height="192">
+                <source media="(min-width: 768px)" srcset="images/homepage/chocolate-mobile@2x.jpg" width="654" height="490">
+                <source media="(min-width: 480px)" srcset="images/homepage/chocolate-mobile.jpg" width="327" height="245">
+                <img class="dish-img chocolate-img" src="images/homepage/chocolate-mobile.jpg" alt="Chocolate Mousse" width="327" height="245">
+              </picture>
+            </div>
+            <div>
+              <img class="offer-lines" src="images/patterns/pattern-divide.svg" alt="pattern divide">
+            </div>
           </div>
           <div>
             <h5>Summer Fruit Chocolate Mousse</h5>
@@ -144,35 +159,40 @@
 
   <!-- gathering events displays -->
    <section class="gathering-content">
-    <div class="gathering-row">
-      <div>
-        <picture>
-          <source media="(min-width: 120px)" srcset="images/homepage/family-gathering-desktop.jpg">
-          <source media="(min-width: 800px)" srcset="images/homepage/family-gathering-tablet.jpg">
-          <source media="(min-width: 375px)" srcset="images/homepage/family-gathering-mobile.jpg">
-          <img src="images/homepage/family-gathering-desktop.jpg" alt="Family Gathering">
-        </picture>
+     <div class="gathering-row">
+       <div>
+         <img class="pattern-line-2" src="images/patterns/pattern-lines.svg" alt="pattern lines gathering">
+         <div>
+          <picture>
+            <source media="(min-width: 1280px)" srcset="images/homepage/family-gathering-desktop.jpg">
+            <source media="(min-width: 768px)" srcset="images/homepage/family-gathering-tablet.jpg">
+            <source media="(min-width: 480px)" srcset="images/homepage/family-gathering-mobile.jpg">
+            <img src="images/homepage/family-gathering-mobile.jpg" alt="Family Gathering around table during dinner">
+          </picture>
+         </div>
       </div>
-      <div>
-        <img class="" src="images/patterns/pattern-divide.svg" alt="pattern divide">
-      
-        <h2>Family gatherings</h2>
-        <p>
-        We love catering for entire families. So please bring everyone along for a special meal with your
-        loved ones. We’ll provide a memorable experience for all.
-        </p>
-        <a class="btn btn-booking-2" href="booking.html">Book a table</a>
-        <ul>
-          <li>
-            <button class="btn-gathering">Family Gathering</button>
-          </li>
-          <li>
-            <button class="btn-special">Special Events</button>
-          </li>
-          <li>
-            <button class="btn-social">Social Events</button>
-          </li>
-        </ul>
+      <div class="displays-box">
+        <div>
+          <h2>Family gatherings</h2>
+          <p>
+            We love catering for entire families. So please bring everyone along for a special meal with your
+            loved ones. We’ll provide a memorable experience for all.
+          </p>
+          <a class="btn btn-booking-2" href="booking.html">BOOK A TABLE</a>
+        </div>
+          <div class="displays-button-box">
+            <ul>
+              <li>
+                <button class="btn-gathering">Family Gathering</button>
+              </li>
+              <li>
+                <button class="btn-special">Special Events</button>
+              </li>
+              <li>
+                <button class="btn-social">Social Events</button>
+              </li>
+            </ul>
+          </div>
       </div>
     </div>
    </section>
@@ -184,7 +204,7 @@
           <h2>Ready to make a reservation?</h2>
         </div>
         <div>
-          <a class="btn btn-booking-3" href="booking.html">Book a table</a>
+          <a class="btn btn-booking-3" href="booking.html">BOOK A TABLE</a>
         </div>
       </div>
     </section>
@@ -197,20 +217,18 @@
         </a>
       </div>
       <div class="list-box">
-        <div>
-          <ul>
-            <li>
-              Marthwaite, Sedbergh
-            </li>
-            <li>
-              Cumbria
-            </li>
-            <li>
-              +00 44 123 4567
-            </li>
-          </ul>
-        </div>
-        <div>
+        <ul>
+          <li>
+            Marthwaite, Sedbergh
+          </li>
+          <li>
+            Cumbria
+          </li>
+          <li>
+            +00 44 123 4567
+          </li>
+        </ul>
+       
           <ul>
             <li>
               Open Times
@@ -222,7 +240,7 @@
               Sat - Sun: 09:00 AM - 11:30 PM
             </li>
           </ul>
-        </div>
+        
       </div>
     </div>
    </footer>
