@@ -339,10 +339,20 @@
 
     form{
         top: 0;
+        padding: 1.5rem 0.3rem;
 
         .form-controls{
             gap: 0;
             flex-wrap: wrap;
+            flex-direction: column;
+        }
+
+        .detail-controls{
+            width: 95%;
+            text-align: left;
+        }
+
+        .details-control-row{
             flex-direction: column;
         }
     }

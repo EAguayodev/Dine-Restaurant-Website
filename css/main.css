@@ -66,30 +66,76 @@ header .btn-booking-1:hover {
 }
 
 .arrow-icon {
+  cursor: pointer;
   position: relative;
-  right: 1.5rem;
+  right: 2rem;
+}
+
+.arrow-icon.show {
+  transform: rotate(180deg);
 }
 
 form {
   background-color: #ffffff;
-  padding: 1rem 1rem;
-  height: 34.063rem;
+  padding: 1.5rem 2.5rem;
   box-shadow: -3px -4px 53px 0px rgba(0, 0, 0, 0.75);
   -webkit-box-shadow: -3px -4px 53px 0px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: -3px -4px 53px 0px rgba(0, 0, 0, 0.75);
   position: relative;
   top: 5rem;
-  max-width: 540px;
-  width: 100%;
 }
 form .form-column {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  align-items: center;
-  gap: 2rem;
+  gap: 1.5rem;
 }
-form .r-number, form span {
+form .form-controls {
+  display: flex;
+  flex-direction: column;
+}
+form .form-reserve-control {
+  display: flex;
+  justify-content: space-around;
+}
+form .detail-controls {
+  display: flex;
+  flex-direction: column;
+}
+form .details-control-row {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+form .time-box-reserve {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+form .input-field.error-placeholder::placeholder {
+  color: #B54949;
+}
+form .input-field.error {
+  border-bottom: 1px solid #B54949;
+}
+form .error-text.error-show {
+  display: block;
+  color: #B54949;
+  font-size: 0.875rem;
+  font-weight: 400;
+  line-height: 1.25rem;
+  margin-top: 0.25rem;
+}
+form #error-email.error-email {
+  color: #B54949;
+  display: block;
+}
+form #error-date.error {
+  color: #B54949;
+  display: block;
+}
+form .r-number,
+form span {
   color: #111111;
 }
 form .name-input {
@@ -118,8 +164,17 @@ form .email-input {
   color: #111111;
   outline: none;
 }
-form .input-month, form .input-day, form .input-year, form .input-hour, form .input-minute, form .input-am-pm {
-  width: 5.75rem;
+form .email-input.error {
+  border-bottom: 1px solid #B54949;
+  color: #B54949;
+}
+form .input-month,
+form .input-day,
+form .input-year,
+form .input-hour,
+form .input-minute,
+form .input-am-pm {
+  width: 4.5rem;
   padding: 0.875rem 1rem;
   border-left: none;
   border-top: none;
@@ -131,49 +186,44 @@ form .input-month, form .input-day, form .input-year, form .input-hour, form .in
   color: #111111;
   outline: none;
 }
-form .form-controls {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 1rem;
-}
-form .input-field.error-placeholder::placeholder {
-  color: #B54949;
-}
 form label {
   font-weight: 500;
   font-size: 1.25rem;
   line-height: 1.625rem;
   color: #111111;
 }
-form .btn-plus, form .btn-minus {
+form .btn-plus,
+form .btn-minus {
   background-color: transparent;
   border: none;
   cursor: pointer;
   padding: 0;
 }
 form .line {
-  max-width: 27.75rem;
-  width: 90%;
-  height: 1px;
   border-bottom: 1px solid #111111;
 }
 form label.label-error {
   color: #B54949;
 }
 form .am-pm_submenu {
+  background: #ffffff;
   position: absolute;
-  top: 20.5rem;
+  top: 22rem;
   right: 0rem;
-  left: 20rem;
+  left: 22rem;
   box-shadow: 0px 0px 53px 0px rgba(0, 0, 0, 0.75);
   -webkit-box-shadow: 0px 0px 53px 0px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: 0px 0px 53px 0px rgba(0, 0, 0, 0.75);
   color: #111111;
   width: 5.75rem;
   display: none;
-  padding: 0.5rem 2rem;
+  padding: 1.2rem 2rem;
   gap: 0.5rem;
+}
+form .am-pm_submenu div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 form .am-pm_submenu a {
   text-decoration: none;
@@ -182,6 +232,9 @@ form .am-pm_submenu a {
   font-weight: 400;
   line-height: 1.5;
   cursor: pointer;
+}
+form .am-pm_submenu.show {
+  display: block;
 }
 form .btn-reservation {
   padding: 1.5rem 7rem;
@@ -700,10 +753,18 @@ footer ul li {
   }
   form {
     top: 0;
+    padding: 1.5rem 0.3rem;
   }
   form .form-controls {
     gap: 0;
     flex-wrap: wrap;
+    flex-direction: column;
+  }
+  form .detail-controls {
+    width: 95%;
+    text-align: left;
+  }
+  form .details-control-row {
     flex-direction: column;
   }
   .mid-pattern-layout {

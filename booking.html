@@ -10,6 +10,7 @@
   <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap" rel="stylesheet">
   <title>Frontend Mentor | Dine Website Challenge</title>
   <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/reset.css">
   <script src="js/form.js" defer></script>
   <!-- <script src="js/script.js" defer></script> -->
 </head>
@@ -28,20 +29,20 @@
             call on the phone number below. We’ll be happy to accommodate you.</p>
         </div>
         <div> 
-          <form action="" id="form-reservation">
+          <form id="form-reservation">
            <div class="form-column">
             <div class="form-controls">
               <input class="name-input input-field" id="name" type="text" name="Full Name" placeholder="Name" aria-label="Name">
-              <small class="error-text" id="error-name"></small>
+              <small class="error-text" id="error-name">This field is required</small>
             </div>
             <div class="form-controls">
               <input class="email-input input-field" type="text" name="Email" placeholder="Email" aria-label="Email">
-              <small class="error-text" id="error-email"></small>
+              <small id="error-email">This field is required</small>
             </div>
-            <div class="form-controls">
+            <div class="details-control-row">
               <div class="detail-controls">
                 <label class="date-text label-input" id="date-pick" for="Date">Pick a date</label>
-                <small class="error-text" id="error-date"></small>
+                <small class="error-text" id="error-date">This field is incomplete</small>
               </div>
              <div>
               <input class="input-month input-field" type="text" placeholder="MM" aria-label="Month">
@@ -49,37 +50,44 @@
               <input class="input-year input-field" type="text" placeholder="YYYY" aria-label="Year">
              </div>
             </div>
-            <div class="form-controls">
+            <div class="details-control-row">
               <div class="detail-controls">
                 <label class="time-text label-input" for="time" id="time-pick">Pick a time</label>
-                <small class="error-text" id="error-time"></small>
+                <small class="error-text" id="error-time">This field is incomplete</small>
               </div>
-              <div aria-expanded="false">
-                <input class="input-hour input-field" type="text" placeholder="00" aria-label="Hour">
-                <input class="input-minute input-field" type="text" placeholder="00" aria-label="Minute">
-                <input class="input-am-pm input-field" type="text" placeholder="AM" aria-label="AM or PM">
-                <img class="arrow-icon" src="images/icons/icon-arrow.svg" alt="arrow" aria-hidden="true">
-                <div class="am-pm_submenu">
-                  <div>
-                    AM
-                  </div>
-                  <div>
-                    PM
+              <div aria-expanded="false" class="details-control-row">
+                <div class="time-box-reserve" aria-dropeffect="popup">
+                  <input class="input-hour input-field" type="text" placeholder="00" aria-label="Hour">
+                  <input class="input-minute input-field" type="text" placeholder="00" aria-label="Minute">
+                  <input class="input-am-pm input-field" type="text" placeholder="AM" aria-label="AM or PM">
+                  <img class="arrow-icon" src="images/icons/icon-arrow.svg" alt="arrow" aria-hidden="true">
+                  <div class="am-pm_submenu" aria-dropeffect="popup">
+                    <div time-selection="AM">
+                      <img src="images/icons/icon-check.svg" alt="check icon for selected am or pm for time reservation">
+                      <a href="#">AM</a>
+                    </div>
+                    <div time-selection="PM">
+                      <a href="#">PM</a>
+                    </div>
                   </div>
                 </div>
               </div>
-              
-                <!-- <button class="btn-arrow">
-                </button> -->
+      
              
             </div>
-            <div class="form-controls">
-              <button class="btn-minus"><img class="icon-minus" src="images/icons/icon-minus.svg" alt="minus icon button"></button>
-              <span class="r-number">0</span> <span>people</span>
-               <button class="btn-plus"><img class="icon-plus" src="images/icons/icon-plus.svg"
+            <div class="form-reserve-control">
+              <div>
+                 <button class="btn-minus"><img class="icon-minus" src="images/icons/icon-minus.svg" alt="minus icon button"></button>
+              </div>
+              <div>
+                <span class="r-number">0</span> <span>people</span>
+              </div>
+              <div>
+                 <button class="btn-plus"><img class="icon-plus" src="images/icons/icon-plus.svg"
                   alt="plus icon button">
                 </button>
               </div>
+            </div>
               <div class="line"></div>
             <div class="form-controls">
               <button class="btn-reservation" type="submit" aria-labelledby="reservationbutton">Make Reservation</button>
