@@ -1,6 +1,3 @@
-// document.addEventListener("DOMContentLoaded", () => {
-
-// });
 
 const form = document.getElementById("form-reservation");
 
@@ -40,7 +37,6 @@ form.addEventListener("submit", (e) => {
     errorPlaceholder(nameField, true);
     isValid = false;
   } else if (nameField.value.trim() !== "10") {
-    // TODO: Update condition to properly check for full name (first and last name)
     errorText.textContent = "Must contain full name";
     errorText.classList.add("error-show");
     inputFields.classList.add("error");
@@ -65,7 +61,6 @@ form.addEventListener("submit", (e) => {
     errorPlaceholder(emailField, false);
     isValid = false;
   } else if (emailField.value.trim() !== "") {
-    // TODO: Update condition to properly validate email format
     emailErrorText.textContent = "Please enter a valid email address";
     emailErrorText.classList.add("error-email");
     emailErrorText.classList.remove("error-email");
@@ -168,7 +163,6 @@ form.addEventListener("submit", (e) => {
    }
 });
 
-// IDEA: toggle arrow icon and submenu for AM/PM selection inside booking form when error handling is implemented
 const arrowIcon = document.querySelector(".arrow-icon");
 const amPmSubmenu = document.querySelector(".am-pm_submenu");
 const amPmInput = document.querySelector(".input-am-pm");

@@ -1,10 +1,17 @@
 .gathering-row {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
     background-image: url(../images/patterns/pattern-curve-top-right.svg);
     background-repeat: no-repeat;
     padding-bottom: 8rem;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+
+    .tab-content {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+
     h2 {
         color: $ebony-clay;
         font-size: 3rem;
@@ -37,7 +44,9 @@
         }
     }
 
-    .btn-gathering, .btn-special, .btn-social{
+    .btn-gathering,
+    .btn-special,
+    .btn-social {
         background: none;
         border: none;
         color: #4c4c4c;
@@ -49,12 +58,12 @@
         }
     }
 
-    ul{
+    ul {
         list-style: none;
         padding: 0;
         margin-top: 4rem;
 
-        li{
+        li {
             margin-bottom: 1rem;
             font-size: 1rem;
             color: $shuttle-gray;
@@ -62,9 +71,9 @@
         }
     }
 
-    .pattern-line-2{
+    .pattern-line-2 {
         position: relative;
         left: -2rem;
         top: 3rem;
-    }   
+    }
 }

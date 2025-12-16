@@ -391,12 +391,17 @@ form .btn-reservation:hover {
 }
 
 .gathering-row {
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
   background-image: url(../images/patterns/pattern-curve-top-right.svg);
   background-repeat: no-repeat;
   padding-bottom: 8rem;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+.gathering-row .tab-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
 }
 .gathering-row h2 {
   color: #242b37;
@@ -426,14 +431,18 @@ form .btn-reservation:hover {
   border: 1px solid #111111;
   transition: 250ms ease-in-out;
 }
-.gathering-row .btn-gathering, .gathering-row .btn-special, .gathering-row .btn-social {
+.gathering-row .btn-gathering,
+.gathering-row .btn-special,
+.gathering-row .btn-social {
   background: none;
   border: none;
   color: #4c4c4c;
   font-size: 1.063rem;
   cursor: pointer;
 }
-.gathering-row .btn-gathering:hover, .gathering-row .btn-special:hover, .gathering-row .btn-social:hover {
+.gathering-row .btn-gathering:hover,
+.gathering-row .btn-special:hover,
+.gathering-row .btn-social:hover {
   color: #17192b;
 }
 .gathering-row ul {
@@ -584,12 +593,12 @@ footer ul li {
   .highlight-dishes .offer-row p {
     text-align: left;
   }
-  .gathering-row {
+  .tab-content {
     flex-direction: column;
     text-align: center;
   }
-  .gathering-row h2,
-  .gathering-row p {
+  .tab-content h2,
+  .tab-content p {
     text-align: center;
   }
   .displays-box {
