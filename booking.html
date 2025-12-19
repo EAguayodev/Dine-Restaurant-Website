@@ -3,7 +3,6 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -12,12 +11,11 @@
   <link rel="stylesheet" href="css/main.css">
   <link rel="stylesheet" href="css/reset.css">
   <script src="js/form.js" defer></script>
-  <!-- <script src="js/script.js" defer></script> -->
+  <script src="js/script.js" defer></script>
 </head>
 <body>
 <!-- booking header content -->
  <header class="booking-header">
- 
       <div class="row-booking-header">
         <div>
           <a href="index.html">
@@ -29,7 +27,7 @@
             call on the phone number below. We’ll be happy to accommodate you.</p>
         </div>
         <div> 
-          <form id="form-reservation" aria-required="true">
+          <form id="form-reservation">
            <div class="form-column">
             <div class="form-controls">
               <input class="name-input input-field" id="name" type="text" name="Full Name" placeholder="Name" aria-label="Name">
@@ -41,7 +39,7 @@
             </div>
             <div class="details-control-row">
               <div class="detail-controls">
-                <label class="date-text label-input" id="date-pick" for="Date">Pick a date</label>
+                <label class="date-text label-input" id="date-pick">Pick a date</label>
                 <small class="error-text" id="error-date">This field is incomplete</small>
               </div>
              <div>
@@ -52,21 +50,21 @@
             </div>
             <div class="details-control-row">
               <div class="detail-controls">
-                <label class="time-text label-input" for="time" id="time-pick">Pick a time</label>
+                <label class="time-text label-input" id="time-pick">Pick a time</label>
                 <small class="error-text" id="error-time">This field is incomplete</small>
               </div>
-              <div aria-expanded="false" class="details-control-row">
-                <div class="time-box-reserve" aria-dropeffect="popup">
+              <div class="details-control-row">
+                <div class="time-box-reserve">
                   <input class="input-hour input-field" type="text" placeholder="00" aria-label="Hour">
                   <input class="input-minute input-field" type="text" placeholder="00" aria-label="Minute">
                   <input class="input-am-pm input-field" type="text" placeholder="AM" aria-label="AM or PM">
                   <img class="arrow-icon" src="images/icons/icon-arrow.svg" alt="arrow" aria-hidden="true">
-                  <div class="am-pm_submenu" aria-dropeffect="popup">
-                    <div time-selection="AM">
+                  <div class="am-pm_submenu">
+                    <div>
                       <img src="images/icons/icon-check.svg" alt="check icon for selected am or pm for time reservation">
                       <a href="#">AM</a>
                     </div>
-                    <div time-selection="PM">
+                    <div>
                       <a href="#">PM</a>
                     </div>
                   </div>
@@ -90,7 +88,7 @@
             </div>
               <div class="line"></div>
             <div class="form-controls">
-              <button class="btn-reservation" type="submit" aria-labelledby="reservationbutton">Make Reservation</button>
+              <button class="btn-reservation" type="submit">Make Reservation</button>
             </div>
            </div>
           </form>

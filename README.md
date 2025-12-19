@@ -30,17 +30,18 @@ Users should be able to:
   - The `Email Address` is not formatted correctly should show "Please use a valid email address"
   - Any of the `Pick a date` or `Pick a time` fields are empty should show "This field is incomplete"
 
-### Screenshot
-
-![](./screenshot.jpg)
-
 
 ### Links
 
-- Solution URL: [Github](https://your-solution-url.com)
+- Solution URL: [Github](https://github.com/EAguayodev/Dine-Restaurant-Website)
 - Live Site URL: [Netlify](https://dine-restaurant-reservation.netlify.app/)
 
 ## My process
+1. Install dependecencies at the start of the project for SCSS and css compiling.
+2. Structure the HTML for both the home and booking page.
+3. Add the SCSS partials for each sections and make responsive for tablet and mobile screens.
+4. Add Javascript to home page for different tab selections for the Family Gathering, Special Events, Social Events tabs.
+5. Write out the form validation and requirements for booking the reservation on the booking page.
 
 ### Built with
 
@@ -48,21 +49,14 @@ Users should be able to:
 - CSS Flexbox
 - SCSS
 - JavaScript
-- TypeScript
 - Desktop-first workflow
 
 
 ### What I learned
-
+Before finishing up the project, I learned to add in the node modules into the gitignore file, and why that's crucial for project deployment. Having node_modules deployed within the project creates more weight for the overall function on the website. Having your fundamental skills with html layouts, specifically with the requirements for the form was tricky and having those fundamentals down was crucial for the time pick and date pick sections within the form. 
 
 ### Continued development
-
-
-### Useful resources
-
-- [Example resource 1](https://www.example.com) - This helped me for XYZ reason. I really liked this pattern and will use it going forward.
-- [Example resource 2](https://www.example.com) - This is an amazing article which helped me finally understand XYZ. I'd recommend it to anyone still learning this concept.
-
+Sharpening up my understanding of Javascript and more CSS frameworks along the journey as I transition from being an Email Marketing Developer & Web content Editor into a front end or full stack developer.
 
 ## Author
 

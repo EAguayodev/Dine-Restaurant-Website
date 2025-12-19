@@ -45,7 +45,6 @@
      .form-column {
          display: flex;
          flex-direction: column;
-         justify-content: space-between;
          gap: 1.5rem;
      }
 
@@ -109,7 +108,6 @@
      }
 
      .name-input {
-         width: 25rem;
          padding: 0.875rem 1rem;
          border-left: none;
          border-top: none;
@@ -123,7 +121,6 @@
      }
 
      .email-input {
-         width: 25rem;
          padding: 0.875rem 1rem;
          border-left: none;
          border-top: none;

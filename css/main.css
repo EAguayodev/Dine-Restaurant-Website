@@ -87,7 +87,6 @@ form {
 form .form-column {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
   gap: 1.5rem;
 }
 form .form-controls {
@@ -139,7 +138,6 @@ form span {
   color: #111111;
 }
 form .name-input {
-  width: 25rem;
   padding: 0.875rem 1rem;
   border-left: none;
   border-top: none;
@@ -152,7 +150,6 @@ form .name-input {
   outline: none;
 }
 form .email-input {
-  width: 25rem;
   padding: 0.875rem 1rem;
   border-left: none;
   border-top: none;
@@ -642,8 +639,11 @@ footer ul li {
   .mid-pattern-row .curve-bottom {
     display: none;
   }
+  .mid-pattern-row .pattern-lines {
+    display: none;
+  }
   .mid-pattern-layout {
-    height: auto;
+    height: 20.875rem;
   }
 }
 @media (max-width: 30rem) {
@@ -760,9 +760,14 @@ footer ul li {
     margin: 0 auto;
     margin-bottom: 3rem;
   }
+  .booking-header .row-booking-header .dine-logo {
+    margin: 0 auto;
+    top: -2rem;
+  }
   form {
     top: 0;
-    padding: 1.5rem 0.3rem;
+    display: flex;
+    justify-content: center;
   }
   form .form-controls {
     gap: 0;
@@ -776,6 +781,15 @@ footer ul li {
   form .details-control-row {
     flex-direction: column;
   }
+  form .btn-reservation {
+    width: 100%;
+    padding: 1.5rem 0;
+    margin-top: 1rem;
+  }
+  form .am-pm_submenu {
+    top: 30rem;
+    left: 13rem;
+  }
   .mid-pattern-layout {
     height: 350px;
   }
@@ -784,6 +798,9 @@ footer ul li {
   }
   .mid-pattern-row .curve-bottom {
     display: none;
+  }
+  footer .dine-logo-footer {
+    margin-bottom: 2rem;
   }
 }
 * {

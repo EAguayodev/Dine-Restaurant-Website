@@ -14,7 +14,7 @@
   <link rel="stylesheet" href="css/main.css">
   <link rel="stylesheet" href="css/reset.css">
   <script src="js/script.js" defer></script>
-  <script src="js/form.js"></script>
+  <script src="js/form.js" defer></script>
 </head>
 <body>
   <!-- header section -->
@@ -29,7 +29,7 @@
       <a class="btn btn-booking-1" href="booking.html">BOOK A TABLE</a>
     </div>
   </header>
-  <main role="main">
+  <main>
     <!-- enjoyable content -->
     <section class="enjoyable-content">
       <div class="enjoy-content-row">
@@ -101,11 +101,9 @@
             <div class="menu-row">
               <div>
                 <picture>
-                  <source media="(min-width: 1280px)" srcset="images/homepage/salmon-desktop-tablet.jpg">
-                  <source media="(min-width: 900px)" srcset="images/homepage/salmon-desktop-tablet@2x.jpg">
-                  <source media="(min-width: 768px)" srcset="images/homepage/salmon-mobile.jpg">
-                  <source media="(min-width: 480px)" srcset="images/homepage/salmon-mobile@2x.jpg" width="654"
-                    height="490">
+                  <source media="(min-width: 1280px)" srcset="images/homepage/salmon-desktop-tablet.jpg" width="128" height="96">
+                  <source media="(min-width: 768px)" srcset="images/homepage/salmon-mobile.jpg" width="128" height="96">
+                  <source media="(min-width: 480px)" srcset="images/homepage/salmon-mobile@2x.jpg" width="654" height="490">
                   <img class="dish-img salmon-img" src="images/homepage/salmon-mobile.jpg" alt="Salmon">
                 </picture>
               </div>
@@ -122,10 +120,9 @@
             <div class="menu-row">
               <div>
                 <picture>
-                  <source media="(min-width: 1280px)" srcset="images/homepage/beef-desktop-tablet.jpg">
-                  <source media="(min-width: 900px)" srcset="images/homepage/beef-desktop-tablet@2x.jpg">
-                  <source media="(min-width: 768px)" srcset="images/homepage/beef-mobile.jpg">
-                  <source media="(min-width: 480px)" srcset="images/homepage/beef-mobile@2x.jpg">
+                  <source media="(min-width: 1280px)" srcset="images/homepage/beef-desktop-tablet.jpg" width="128" height="96">
+                  <source media="(min-width: 768px)" srcset="images/homepage/beef-mobile.jpg" width="128" height="96">
+                  <source media="(min-width: 480px)" srcset="images/homepage/beef-mobile@2x.jpg" width="654" height="490">
                   <img class="dish-img filet-img" src="images/homepage/beef-mobile.jpg" alt="Filet Mignon">
                 </picture>
               </div>
@@ -142,16 +139,10 @@
             <div class="menu-row">
               <div>
                 <picture>
-                  <source media="(min-width: 1280px)" srcset="images/homepage/chocolate-desktop-tablet.jpg" width="128"
-                    height="96">
-                  <source media="(min-width: 900px)" srcset="images/homepage/chocolate-desktop-tablet@2x.jpg"
-                    width="256" height="192">
-                  <source media="(min-width: 768px)" srcset="images/homepage/chocolate-mobile@2x.jpg" width="654"
-                    height="490">
-                  <source media="(min-width: 480px)" srcset="images/homepage/chocolate-mobile.jpg" width="327"
-                    height="245">
-                  <img class="dish-img chocolate-img" src="images/homepage/chocolate-mobile.jpg" alt="Chocolate Mousse"
-                    width="327" height="245">
+                  <source media="(min-width: 1280px)" srcset="images/homepage/chocolate-desktop-tablet.jpg" width="128" height="96">
+                  <source media="(min-width: 768px)" srcset="images/homepage/chocolate-mobile.jpg" width="128" height="96">
+                  <source media="(min-width: 480px)" srcset="images/homepage/chocolate-mobile@2x.jpg" width="654" height="490">
+                  <img class="dish-img chocolate-img" src="images/homepage/chocolate-mobile.jpg" alt="Chocolate Mousse">
                 </picture>
               </div>
               <div>
@@ -170,7 +161,7 @@
     <!-- gathering events displays -->
     <section class="gathering-content">
       <div class="gathering-row">
-        <div class="tab-content">
+        <div class="tab-content" role="tablist">
           <div>
             <img class="pattern-line-2" src="images/patterns/pattern-lines.svg" alt="pattern lines gathering">
             <div>
@@ -184,8 +175,8 @@
             </div>
           </div>
           <div class="displays-box">
-            <div class="tablist" role="tablist" aria-labelledby="tab-1" tabindex="0">
-              <h2 class="event-heading">Family gatherings</h2>
+            <div class="tablist" role="tablist" tabindex="0">
+              <h2 class="event-heading">Family Gatherings</h2>
               <p class="event-description">
                 We love catering for entire families. So please bring everyone along for a special meal
                 with your
@@ -196,14 +187,13 @@
             <div class="displays-button-box">
               <ul>
                 <li>
-                  <button class="button-select btn-gathering" role="tab" aria-controls="tab-1">Family
-                    Gathering</button>
+                  <button class="btn-gathering" role="tab">Family Gathering</button>
                 </li>
                 <li>
-                  <button class="button-select btn-special" role="tab" aria-controls="tab-2">Special Events</button>
+                  <button class="btn-special" role="tab">Special Events</button>
                 </li>
                 <li>
-                  <button class="button-select btn-social" role="tab" aria-controls="tab-3">Social Events</button>
+                  <button class="btn-social" role="tab">Social Events</button>
                 </li>
               </ul>
             </div>

@@ -149,10 +149,10 @@
 
     // booking tablet area
 
-    .booking-header{
+    .booking-header {
         background-image: url(../images/booking/hero-bg-tablet.jpg);
 
-        .row-booking-header{
+        .row-booking-header {
             top: 5rem;
             left: 0;
             right: 0;
@@ -160,7 +160,7 @@
             align-items: center;
             flex-direction: column;
 
-            h1{
+            h1 {
                 font-size: 3rem;
                 width: 25rem;
                 position: relative;
@@ -169,15 +169,19 @@
         }
     }
 
-        .mid-pattern-row {
-            .curve-bottom {
-                display: none;
-            }
+    .mid-pattern-row {
+        .curve-bottom {
+            display: none;
         }
 
-                .mid-pattern-layout {
-                    height: auto;
-                }
+        .pattern-lines {
+            display: none;
+        }
+    }
+
+    .mid-pattern-layout {
+        height: 20.875rem;
+    }
 }
 
 // Responsive styles for mobile screens
@@ -314,7 +318,7 @@
             align-items: center;
         }
 
-        ul{
+        ul {
             text-align: center;
         }
 
@@ -322,52 +326,74 @@
 
     // booking mobile area
 
-    .booking-header{
+    .booking-header {
         background-image: url(../images/booking/hero-bg-mobile.jpg);
 
-        .row-booking-header{
+        .row-booking-header {
             top: 0;
             flex-direction: column;
 
-            p{
+            p {
                 width: 20rem;
                 margin: 0 auto;
                 margin-bottom: 3rem;
             }
+
+            .dine-logo {
+                margin: 0 auto;
+                top: -2rem;
+            }
         }
     }
 
-    form{
+    form {
         top: 0;
-        padding: 1.5rem 0.3rem;
+        display: flex;
+        justify-content: center;
 
-        .form-controls{
+        .form-controls {
             gap: 0;
             flex-wrap: wrap;
             flex-direction: column;
         }
 
-        .detail-controls{
+
+        .detail-controls {
             width: 95%;
             text-align: left;
         }
 
-        .details-control-row{
+        .details-control-row {
             flex-direction: column;
+        }
+
+        .btn-reservation {
+            width: 100%;
+            padding: 1.5rem 0;
+            margin-top: 1rem;
+        }
+
+        .am-pm_submenu{
+            top: 30rem;
+            left: 13rem;
         }
     }
 
-    .mid-pattern-layout{
+    .mid-pattern-layout {
         height: 350px;
 
-        .pattern-lines{
+        .pattern-lines {
             display: none;
         }
     }
 
     .mid-pattern-row {
-        .curve-bottom{
+        .curve-bottom {
             display: none;
         }
+    }
+
+    footer .dine-logo-footer {
+        margin-bottom: 2rem;
     }
 }
