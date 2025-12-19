@@ -64,3 +64,4 @@ Sharpening up my understanding of Javascript and more CSS frameworks along the j
 
 
 ## Acknowledgments
+Give thanks like always to Frontendmentor for providing the premium challenges for offering their platform to hone my developer skills.
